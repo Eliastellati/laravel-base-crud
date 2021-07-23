@@ -8,8 +8,8 @@
         <img src="{{$comic->thumb}}" alt="">
         {{-- <p>{{$comic->description}}</p>   --}}
         <a href="{{route('comics.show', $comic->id)}}" class="btn btn-success">Show</a>  
-        <a href="{{route('comics.edit', $comic->id)}}">Edit</a>
-        <a href="{{route('comics.show', $comic->id)}}">Delete</a>
+        <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-warning">Edit</a>
+        <a href="{{route('comics.index', $comic->id)}}"calss="btn btn-danger">Delete</a>
     </div>
     @endforeach
 
